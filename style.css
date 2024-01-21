@@ -11,11 +11,20 @@ header, footer, .hero {
     background-color: #1F2937;
 }
 
+header, .hero, .navigation, .quote-container, .cta-container, footer {
+    padding: 15px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    padding: 15px;
+}
+
+.header-right {
+    display: flex;
+    gap: 25px;
 }
 
 .hero {
@@ -32,6 +41,28 @@ header {
     height: auto;
     background-color: gray;
     text-align: center;
+}
+
+.navigation {
+    text-align: center;
+}
+
+.navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.navigation-item {
+    max-width: 160px;
+}
+
+.navigation-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: #3882F6 4px solid;
 }
 
 footer {
@@ -57,6 +88,11 @@ h1 {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
 }
 
 button {
