@@ -12,14 +12,13 @@ header, footer, .hero {
 }
 
 header, .hero, .navigation, .quote-container, .cta-container, footer {
-    padding: 15px;
+    padding: 15px 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
 }
 
 .header-right {
@@ -63,6 +62,25 @@ header {
     height: 150px;
     border-radius: 15px;
     border: #3882F6 4px solid;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 100px;
 }
 
 footer {
