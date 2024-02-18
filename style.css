@@ -2,7 +2,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
     margin: auto;
     font-family: Roboto, 'Helvetica Neue', Cantarell, 'Open Sans', sans-serif;
 }
@@ -11,14 +10,19 @@ header, footer, .hero {
     background-color: #1F2937;
 }
 
-header, .hero, .navigation, .quote-container, .cta-container, footer {
-    padding: 15px 
+.hero, .navigation, .cta-container {
+    padding:100px calc(((100% - 1000px)/2))
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:15px calc(((100% - 1000px)/2))
+}
+
+footer {
+    padding: 40px;
 }
 
 .header-right {
@@ -30,23 +34,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    margin: auto;
+    gap: 50px;
 }
 
 .hero-right {
     flex-shrink: 0;
     width: 50%;
-    height: auto;
-    background-color: gray;
+    padding: 100px 0;
+    background-color: rgb(105, 106, 112);
     text-align: center;
 }
 
 .navigation {
     text-align: center;
+    padding-top: 25px;
 }
 
 .navigation-items {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +71,7 @@ header {
 
 .quote-container {
     background-color: #E5E7EB;
-    padding: 100px;
+    padding:100px calc(((100% - 700px)/2))
 }
 
 .quote-text {
@@ -80,7 +85,17 @@ header {
     text-align: right;
     font-weight: bold;
     font-size: 24px;
-    margin-right: 100px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.cta-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 50px 100px;
 }
 
 footer {
@@ -90,7 +105,7 @@ footer {
     margin-top: auto;
 }
 
-a, footer, .header-right, .text-white {
+a, footer, .header-right, .text-white, button {
     font-size: 18px;
     text-decoration: none;
     color: #E5E7EB;
@@ -109,15 +124,35 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F9FAF8;
+    margin: 0px;
+}
+
 p {
     margin: 0px;
 }
 
 button {
-    border-radius: 8px;
-    padding: 5px 25px;
+    border-radius: 7px;
+    padding: 8px 35px;
+    margin: 10px 0px;
     background-color: #3882F6;
-    color: white;
+    transition-duration: 0.2s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3475dd;
+    cursor: pointer;
 }
 
 .button-blue {
@@ -125,5 +160,5 @@ button {
 }
 
 .button-white {
-    border: white;
+    border: solid 2px white;
 }
